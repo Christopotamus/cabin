@@ -34,6 +34,7 @@ tilemap::tilemap(int seed)
         for(int x = h - radius+1; x < h+radius; x++){
             for(int y = k - radius+1; y < k + radius; y++){
                 if((pow(abs(x-h),2) + (pow(abs(y-k),2))) <= radius*radius)
+                    if(x >= 0 && x < 128 && y >= 0 && y < 128)
                     tile[x][y].tile_type = tile_dirt;
             }
         }

@@ -15,7 +15,7 @@ using namespace std;
 float mapCenterX;
 float mapCenterY;
 
-int gameSeed = 2903748923749792394837249732;
+int gameSeed = 1254;
 //rand();
 
 
@@ -101,7 +101,7 @@ int main()
 
 
     human p(gameSeed);
-    p.printStats();
+    //p.printStats();
     tilemap m(gameSeed);
     object *objects[4];
 
@@ -183,6 +183,7 @@ int main()
                 };
             }
         }
+
 
         glClearColor(0.f, 0.f, 0.f, 0.f);
 

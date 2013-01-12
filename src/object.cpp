@@ -9,30 +9,30 @@ object::object(string objectName)
     //load object properties for object type
     //find filename that has EXACTLY objectName in it
     ifstream objFile;
-    char *bit;
-    char *bits;
+    char *bit = new char[200];
 
 
     objFile.open((string("./objects/")+objectName + string(".orz")).c_str(), ios::in);
 
     if(objFile.is_open()){
-
         //cout << "Building " << (string("objects/")+objectName).c_str() << endl;
         //read first bit
-        objFile.get(bit, 2);
-        //cout << "Name is: " << bit << " characters long" << endl;
-        objFile.get(bit,atoi(bit)+1);
-        name = bit;
-        //cout << "The name is:" << name << endl;
-        while(objFile.good()){
-            objFile.get(*bit);
-            properties[prop_itr++] = atoi(bit);
-        }
-        //cout << endl;
-        objFile.close();
+        if(objFile.good()){
+            objFile.get(bit, 2);
+            //cout << "Name is: " << bit << " characters long" << endl;
+            objFile.get(bit,atoi(bit)+1);
+            name = bit;
+            //cout << "The name is:" << name << endl;
+            while(objFile.good()){
+                objFile.get(*bit);
+                properties[prop_itr++] = atoi(bit);
+            }
+        }else
+            objFile.close();
 
     }
 
+    delete bit;
 
 }
 
