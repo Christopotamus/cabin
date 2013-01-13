@@ -1,7 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include "human.h"
-#include "tilemap.h"
-#include "object.h"
+#include "game.h"
 
 #include <vector>
 #include <fstream>
@@ -10,7 +8,7 @@
 
 using namespace std;
 
-    vector<object*> objList;
+vector<object*> objList;
 
 float mapCenterX;
 float mapCenterY;
@@ -38,11 +36,6 @@ void genBuilding(tilemap *m){
     //coordY = height+1;
     //coordX = (coordX %2 == 0) ? coordX : coordX +1;
     //coordY = (coordY %2 == 0) ? coordY : coordY +1;
-
-
-    cout << "Generating farmhouse at:";
-    cout << coordX << "," << coordY << endl;
-    cout << "It is of size: " << width << "x"<<height<<endl;
 
     //go to centerpoint and add walls around it
 

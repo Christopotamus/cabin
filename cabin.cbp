@@ -69,10 +69,12 @@
 			<Add directory="../SFML-2.0-rc/lib" />
 		</Linker>
 		<Unit filename="cb.bmp" />
+		<Unit filename="include/game.h" />
 		<Unit filename="include/human.h" />
 		<Unit filename="include/object.h" />
 		<Unit filename="include/tilemap.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/game.cpp" />
 		<Unit filename="src/human.cpp" />
 		<Unit filename="src/object.cpp" />
 		<Unit filename="src/tilemap.cpp" />

@@ -1011,3 +1011,11 @@
 1357962868 source:/home/chris/Programming/roguezombies/src/tilemap.cpp
 	"tilemap.h"
 
+1358105699 source:/home/chris/Programming/roguezombies/src/game.cpp
+	"game.h"
+
+1358105714 /home/chris/Programming/roguezombies/include/game.h
+	"human.h"
+	"tilemap.h"
+	"object.h"
+
