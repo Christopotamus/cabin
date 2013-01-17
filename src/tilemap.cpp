@@ -1,7 +1,6 @@
 #include "tilemap.h"
 
-tilemap::tilemap()
-{
+tilemap::tilemap(){
     //ctor
     for(int x = 0; x < 128; x++)
     for(int y = 0; y < 128; y++){
@@ -12,8 +11,7 @@ tilemap::tilemap()
     xSeed = rand();
     ySeed = rand();
 }
-tilemap::tilemap(int seed)
-{
+tilemap::tilemap(int seed){
     //ctor
     srand(seed);
     //ctor
@@ -41,8 +39,7 @@ tilemap::tilemap(int seed)
     }
 }
 
-tilemap::~tilemap()
-{
+tilemap::~tilemap(){
     //dtor
 }
 

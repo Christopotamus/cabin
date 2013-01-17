@@ -1,7 +1,6 @@
 #include "human.h"
 
-human::human(int seed)
-{
+human::human(int seed){
     srand(seed);
     //ctor
     blood = 5.0; // amount of blood in quarts
@@ -33,12 +32,12 @@ human::human(int seed)
     leftAnkle.isBroken = false;
     rightAnkle.isBroken = false;
     neck.isBroken = false;
-    head.isBroken = false;;
+    head.isBroken = false;
+
     coordX = coordY = 0;
 }
 
-human::~human()
-{
+human::~human(){
     //dtor
 }
 

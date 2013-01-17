@@ -1,7 +1,6 @@
 #include "object.h"
 
-object::object(string objectName)
-{
+object::object(string objectName){
     //ctor
     coordX = 0;
     coordY = 0;
@@ -36,8 +35,7 @@ object::object(string objectName)
 
 }
 
-object::~object()
-{
+object::~object(){
     //dtor
 }
 bool object::checkProperty(int i){

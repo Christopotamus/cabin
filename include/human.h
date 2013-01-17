@@ -7,6 +7,7 @@
 
 struct bone{
     bool isBroken;
+    bool isSevered;
 };
 
 typedef enum illness_type{

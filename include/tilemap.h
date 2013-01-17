@@ -25,8 +25,7 @@ struct map_cell{
     object *items[ITEMS_PER_TILE];
 };
 
-class tilemap
-{
+class tilemap{
     public:
         tilemap(int seed); // load a specific map
         tilemap(); //generate a random map
